@@ -192,7 +192,7 @@ personas.map((person)=>{
 
 //poner modo oscuro
 
-
+const cuerpo = document.querySelector('body')
 const botones =document.querySelector('button')
 const carts = document.getElementById('carta')
 
@@ -210,6 +210,7 @@ botones.innerHTML="modo oscuro"
 
 //agregar btn dark
 botones.classList.add("btn-dark")
+cuerpo.classList.add("bg-dark")
 
 
 
@@ -219,6 +220,7 @@ botones.classList.add("btn-dark")
   //agregar btn claro
 botones.classList.remove("btn-dark")
 botones.classList.add("btn-light")
+cuerpo.classList.replace("bg-dark","bg-light")
 }
 });
 
@@ -235,6 +237,8 @@ botones.innerHTML="modo oscuro"
 //agregar btn dark
 botones.classList.add("btn-dark")
 carts.classList.add("text-bg-dark")
+cuerpo.classList.add("bg-dark")
+
 
 
 }else{
@@ -243,6 +247,7 @@ carts.classList.add("text-bg-dark")
   //agregar btn claro
   botones.classList.replace("btn-dark","btn-light")
   carts.classList.replace("text-bg-dark","text-bg-light")
+  cuerpo.classList.replace("bg-dark","bg-light")
 /*  botones.classList.remove("btn-dark")
 botones.classList.add("btn-light")*/
 }
